@@ -1,0 +1,112 @@
+.header--line {
+    display: flex;
+}
+
+.header--border {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+    &:last-child {
+        margin-top: 0;
+    }
+}
+
+.nav__items {
+    display: flex;
+    justify-content: center;
+}
+
+.nav__item {
+    margin-right: 50px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:last-child {
+        margin-right: 0;
+    }
+    &:focus {
+        color: var(--btn-logo-fh-color);
+    }
+}
+
+.nav__link {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:focus,
+    &:hover {
+        color: var(--btn-logo-fh-color);
+    }
+}
+
+.nav__link--active {
+    color: var(--btn-logo-fh-color);
+    position: relative;
+    top: 1px;
+    &::after {
+        content: "";
+        width: 46px;
+        height: 4px;
+        background-size: contain;
+    }
+    &::after {
+        margin-top: 28px;
+        background-image: url(../imeges/line.png);
+        display: block;
+    }
+}
+
+.nav__link--active-next {
+    color: var(--btn-logo-fh-color);
+    &::after {
+        content: "";
+        height: 4px;
+        background-size: contain;
+    }
+    &::after {
+        margin-top: 28px;
+        background-image: url(../imeges/line-next.png);
+        display: block;
+    }
+}
+
+.header__address {
+    margin-left: 290px;
+}
+
+.address__item {
+    margin-right: 30px;
+    display: block;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.address__link {
+    color: var(--address-color);
+    fill: var(--address-color);
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 0.02em;
+    display: flex;
+    align-items: center;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+        color: var(--btn-logo-fh-color);
+        fill: var(--btn-logo-fh-color);
+        transition-duration: 250ms;
+    }
+}
+
+.address__icon {
+    margin-right: 10px;
+}

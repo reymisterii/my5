@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button
+          class="modal__button--close element-center"
+          type="button"
+          data-modal-close
+        >
+          <svg class="modal__icon-close" width="18" height="18">
+            <use
+              href="./imeges/vector/symbol-defs.svg#icont-vectorclose-black-18dp-2-1"
+            ></use>
+          </svg>
+        </button>
+        <form class="modal__container">
+          <p class="send-menu-title">
+            Оставьте свои данные, мы вам передзвоним
+          </p>
+          <label class="send-menu">
+            <span class="send-menu-text">Имя</span>
+            <input
+              class="send-menu-send"
+              type="text"
+              name="username"
+              placeholder="Ірка"
+            />
+            <svg class="modal__icon" width="16" height="16">
+              <use
+                href="./imeges/vector/symbol-defs.svg#icont-vectorperson-black-18dp-1"
+              ></use>
+            </svg>
+          </label>
+          <label class="send-menu">
+            <span class="send-menu-text">Телефон</span>
+            <input
+              class="send-menu-send"
+              type="text"
+              name="phoun"
+              placeholder="+380777777777"
+            />
+            <svg class="modal__icon" width="18" height="18">
+              <use
+                href="./imeges/vector/symbol-defs.svg#icont-vectorphone-black-18dp-1"
+              ></use>
+            </svg>
+          </label>
+          <label class="send-menu">
+            <span class="send-menu-text">Почта</span>
+            <input
+              class="send-menu-send"
+              type="email"
+              name="email"
+              placeholder="***********@gmail.com"
+            />
+            <svg class="modal__icon" width="18" height="18">
+              <use
+                href="./imeges/vector/symbol-defs.svg#icont-vectoremail-black-18dp-1"
+              ></use>
+            </svg>
+          </label>
+          <label class="send-menu" for="id-comment">
+            <span class="send-menu-text">Комментарий</span>
+            <textarea
+              class="send-menu-send__textarea"
+              id="id-comment"
+              name="comment"
+              placeholder="Введите текст"
+            ></textarea>
+          </label>
+          <label class="send-menu-check">
+            <input
+              class="send-menu-checkbox"
+              type="checkbox"
+              name="consent"
+              value="consent"
+            />
+            Соглашаюсь с рассылкой и принимаю
+            <a class="send-menu-checkbox-link" href="#">Условия договора</a>
+          </label>
+          <button class="modal__btn" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,101 @@
+.portfolio-cards {
+    gap: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+    list-style: none;
+}
+
+.portfolio-card {
+    width: 370px;
+    height: 404px;
+    background: var(--white-color);
+    flex-basis: calc((100% - 60px) / 3);
+}
+
+.portfolio-card__img {
+    display: block;
+    text-decoration: none;
+    height: 404px;
+    width: 370px;
+    // border: 1px solid var(--next-border-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+        box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%),
+        1px 4px 6px rgb(0 0 0 / 16%);
+    }
+}
+
+.box {
+    position: relative;
+    overflow: hidden;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover .overlay {
+        transform: translatex(0);
+    }
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 150, 243, 0.9);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(100%);
+    transition: transform 250ms ease;
+}
+
+.overlay>p {
+    position: absolute;
+    width: 322px;
+    height: 168px;
+    margin-top: 63px;
+    margin-right: 24px;
+    margin-bottom: 63px;
+    margin-left: 24px;
+    font-size: 18px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    color: var(--white-color);
+}
+
+.card-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.item-list {
+    max-width: 370px;
+    max-height: 110px;
+    border-bottom: 1px solid var(--next-border-color);
+    border-left: 1px solid var(--next-border-color);
+    border-right: 1px solid var(--next-border-color);
+}
+
+.item-list>h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--text-color);
+    padding: 20px 24px 7px 24px;
+    margin: auto;
+}
+
+.item-list>p {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.03em;
+    color: var(--address-color);
+    padding: 0 24px 0 24px;
+}

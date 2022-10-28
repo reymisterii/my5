@@ -1,0 +1,127 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px ;
+    background-color: var(--main-fon-color);
+}
+
+.footer__items {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer__item {
+    margin-right: 72px;
+}
+
+.footer__form {
+    display: inline-flex;
+}
+
+.footer__label {
+    display: grid;
+}
+
+.footer__title {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-color);
+    margin-bottom: 20px;
+}
+
+.footer__social {
+    margin-top: 20px;
+}
+
+.footer__address {
+    width: 231px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: var(--white-color);
+    margin-top: 20px;
+    margin-bottom: 9px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+        color: var(--btn-logo-fh-color);
+    }
+}
+
+.address-retreat {
+    padding-bottom: 9px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.address--grey {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+        color: var(--btn-logo-fh-color);
+    }
+}
+
+.team-card__social--black-grey {
+    margin-right: 10px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.team-card__link--grey {
+    fill: var(--white-color);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer__input {
+    height: 50px;
+    width: 358px;
+    padding: 0 0 0 42px;
+    font-family: inherit;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    cursor: pointer;
+    bottom: 11px;
+    background-color: var(--main-fon-color);
+}
+
+.btn__footer {
+    margin-left: 12px;
+    margin-top: 35px;
+}
+
+.btn__text {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    color: var(--white-color);
+}
+
+.btn__icon {
+    fill: var(--white-color);
+    position: relative;
+    left: 10px;
+    cursor: pointer;
+}

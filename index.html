@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <title>WebStudio</title>
+  </head>
+  <body>
+    <header class="header header--border element-center">
+      <div class="container element-center">
+        <a href="#" class="border-red logo">
+          <span class="logo--blue">Web</span>
+          <span class="logo--black">Studio</span>
+        </a>
+        <nav class="border-red nav">
+          <ul class="nav__items">
+            <li class="nav__item">
+              <a href="./index.html" class="nav__link nav__link--active"
+                >Студія</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="./portfolio.html" class="nav__link">Портфоліо</a>
+            </li>
+            <li class="nav__item">
+              <a href="./stud.html" class="nav__link">Контракти</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="border-red nav">
+          <ul class="header__address element-center">
+            <li class="element-center address__item">
+              <a
+                href="mailto:info@devstudio.com"
+                class="address__link element-center"
+              >
+                <svg
+                  class="address__icon element-center"
+                  width="16"
+                  height="16"
+                >
+                  <use
+                    href="./imeges/vector/symbol-defs.svg#icont-vectorenvelope"
+                  ></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="element-center address__item">
+              <a href="tel:+380961111111" class="address__link element-center">
+                <svg
+                  class="address__icon element-center"
+                  width="16"
+                  height="16"
+                >
+                  <use
+                    href="./imeges/vector/symbol-defs.svg#icont-vectorsmartphone"
+                  ></use>
+                </svg>
+                +380 96 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="section order">
+        <div class="container">
+          <h1 class="order__title border-red">
+            ЭФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА
+          </h1>
+          <button
+            class="btn btn--black-border"
+            type="button"
+            data-modal-open=""
+            value="Заказать услуги"
+          >
+            Заказать услугу
+          </button>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <h2 class="visually-hidden">Наши особенности</h2>
+          <ul class="border-red element-center retreat-top benefits">
+            <li class="benefits--right">
+              <div class="border-red element-center benefits__card">
+                <svg class="card__figure" width="70" height="70">
+                  <use
+                    class="card__image"
+                    href="./imeges/vector/symbol-defs.svg#icont-vectorantenna"
+                  ></use>
+                </svg>
+              </div>
+              <h3 class="benefits-card__title">Внимание к деталям</h3>
+              <p class="benefits-card__subtitle">
+                Идейные соображения, а также начало повседневной работы по
+                формированию позиции.
+              </p>
+            </li>
+            <li class="benefits--right">
+              <div class="border-red element-center benefits__card">
+                <svg class="benefits-card__figure" width="70" height="70">
+                  <use
+                    class="benefits-card__image"
+                    href="./imeges/vector/symbol-defs.svg#icont-vectorclock"
+                  ></use>
+                </svg>
+              </div>
+              <h3 class="benefits-card__title">Пунктуальность</h3>
+              <p class="benefits-card__subtitle">
+                Задача организации, в особенности же рамки и место обучения
+                кадров влечет за собой.
+              </p>
+            </li>
+            <li class="benefits--right">
+              <div class="border-red element-center benefits__card">
+                <svg class="benefits-card__figure" width="70" height="70">
+                  <use
+                    class="benefits-card__image"
+                    href="./imeges/vector/symbol-defs.svg#icont-vectordiagram"
+                  ></use>
+                </svg>
+              </div>
+              <h3 class="benefits-card__title">Планирование</h3>
+              <p class="benefits-card__subtitle">
+                Равным образом консультация с широким активом в значительной
+                степени обуславливает.
+              </p>
+            </li>
+            <li class="benefits--right">
+              <div class="border-red element-center benefits__card">
+                <svg class="benefits-card__figure" width="70" height="70">
+                  <use
+                    class="benefits-card__image"
+                    href="./imeges/vector/symbol-defs.svg#icont-vectorastronaut"
+                  ></use>
+                </svg>
+              </div>
+              <h3 class="benefits-card__title">Современные технологии</h3>
+              <p class="benefits-card__subtitle">
+                Значимость этих проблем настолько очевидна, что реализация
+                плановых заданий.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section retreat-top opportunities">
+        <div class="container">
+          <h2 class="opportunities title-next">Чем мы занимаемся</h2>
+          <ul
+            class="border-red element-center retreat-bottom opportunities-card"
+          >
+            <li class="opportunities-card__figure">
+              <img
+                class="opportunities-card__image no-gap"
+                src="./imeges/box1.jpg"
+                alt=""
+                width="370"
+                height="294"
+              />
+              <div class="opportunities-card__subtitle element-center">
+                <p class="opportunities-card__subtitle--transparency"></p>
+                  Десктопные приложения
+                </p>
+              </div>
+            </li>
+            <li class="opportunities-card__figure">
+              <img
+                class="opportunities-card__image no-gap"
+                src="./imeges/box2.jpg"
+                alt=""
+                width="370"
+                height="294"
+              />
+              <div class="opportunities-card__subtitle element-center">
+                <p class="opportunities-card__subtitle--transparency">
+                  Мобильные приложения
+                </p>
+              </div>
+            </li>
+            <li class="opportunities-card__figure">
+              <img
+                class="opportunities-card__image no-gap"
+                src="./imeges/box3.jpg"
+                alt=""
+                width="370"
+                height="294"
+              />
+              <div class="opportunities-card__subtitle element-center">
+                <p class="opportunities-card__subtitle--transparency">
+                  Дизайнерские решения
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section section--next-color retreat-top retreat-bottom">
+        <div class="container">
+          <div class="border-red">
+            <h2 class="title-next border-red">Наша команда</h2>
+            <ul class="border-red team-card container--grey">
+              <li class="border-red team-card__card-figure">
+                <img
+                  class="team-card__card--image no-gap"
+                  src="./imeges/img1.jpg"
+                  alt=""
+                  width="270"
+                  height="260"
+                />
+                <h3 class="team-card__card-title element-center">
+                  Игорь Демьяненко
+                </h3>
+                <p class="team-card__card-subtitle element-center">
+                  Product Designer
+                </p>
+                <ul
+                  class="border-red element-center team-card__social-networks"
+                >
+                  <li class="team-card__social--wight">
+                    <a class="team-card__link" href="#">
+                      <svg class="team-card__icon" width="20" height="20">
+                        <use
+                          class="team-card__vector"
+                          href="./imeges/vector/symbol-defs.svg#icont-vectorinstagram"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team-card__social--wight">
+                    <a class="team-card__link" href="#">
+                      <svg class="team-card" width="20" height="20">
+                        <use
+                          class="team-card__vector"
+                          href="./imeges/vector/symbol-defs.svg#icont-vectortwitter"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team-card__social--wight">
+                    <a class="team-card__link" href="#">
+                      <svg class="team-card" width="20" height="20">
+                        <use
+                          class="team-card__vector"
+                          href="./imeges/vector/symbol-defs.svg#icont-vectorfacebook"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team-card__social--wight">
+                    <a class="team-card__link" href="#">
+                      <svg class="team-card" width="20" height="20">
+                        <use
+                          class="team-card__vector"
+                          href="./imeges/vector/symbol-defs.svg#icont-vectorlinkedin"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="border-red team-card__card-figure">
+                <img
+                  class="team-card__card--image no-gap"
+                  src="./imeges/img2.jpg"
+                  alt=""
+                  width="270"
+                  height="260"
+                />
+                <h3 class="team-card__card-title element-center">
+                  Ольга Репина
+                </h3>
+                <p class="team-card__card-subtitle element-center">
+                  Frontend Developer
+                </p>
+                <ul
+                  class="border-red element-center team-card__social-networks"
+                >
+                  <li class="team-card__social--wight">
+                    <a class="team-card__link" href="#">
+                      <svg class="team-card__icon" width="20" height="20">
+                        <use
+                          class="team-card__vector"
+                          href="./imeges/vector/symbol-defs.svg#icont-vectorinstagram"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team-card__social--wight">
+                    <a class="team-card__link" href="#">
+                      <svg class="team-card" width="20" height="20">
+                        <use
+                          class="team-card__vector"
+                          href="./imeges/vector/symbol-defs.svg#icont-vectortwitter"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team-card__social--wight">
+                    <a class="team-card__link" href="#">
+                      <svg class="team-card" width="20" height="20">
+                        <use
+                          class="team-card__vector"
+                          href="./imeges/vector/symbol-defs.svg#icont-vectorfacebook"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team-card__social--wight">
+                    <a class="team-card__link" href="#">
+                      <svg class="team-card" width="20" height="20">
+                        <use
+                          class="team-card__vector"
+                          href="./imeges/vector/symbol-defs.svg#icont-vectorlinkedin"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="border-red team-card__card-figure">
+                <img
+                  class="team-card__card--image no-gap"
+                  src="./imeges/img3.jpg"
+                  alt=""
+                  width="270"
+                  height="260"
+                />
+                <h3 class="team-card__card-title element-center">
+                  Николай Тарасов
+                </h3>
+                <p class="team-card__card-subtitle element-center">Marketing</p>
+                <ul
+                  class="border-red element-center team-card__social-networks"
+                >
+                  <li class="team-card__social--wight">
+                    <a class="team-card__link" href="#">
+                      <svg class="team-card__icon" width="20" height="20">
+                        <use
+                          class="team-card__vector"
+                          href="./imeges/vector/symbol-defs.svg#icont-vectorinstagram"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team-card__social--wight">
+                    <a class="team-card__link" href="#">
+                      <svg class="team-card" width="20" height="20">
+                        <use
+                          class="team-card__vector"
+                          href="./imeges/vector/symbol-defs.svg#icont-vectortwitter"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team-card__social--wight">
+                    <a class="team-card__link" href="#">
+                      <svg class="team-card" width="20" height="20">
+                        <use
+                          class="team-card__vector"
+                          href="./imeges/vector/symbol-defs.svg#icont-vectorfacebook"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team-card__social--wight">
+                    <a class="team-card__link" href="#">
+                      <svg class="team-card" width="20" height="20">
+                        <use
+                          class="team-card__vector"
+                          href="./imeges/vector/symbol-defs.svg#icont-vectorlinkedin"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="border-red team-card__card-figure">
+                <img
+                  class="team-card__card--image no-gap"
+                  src="./imeges/img4.jpg"
+                  alt=""
+                  width="270"
+                  height="260"
+                />
+                <h3 class="team-card__card-title element-center">
+                  Михаил Ермаков
+                </h3>
+                <p class="team-card__card-subtitle element-center">
+                  UI Designer
+                </p>
+                <ul
+                  class="border-red element-center team-card__social-networks"
+                >
+                  <li class="team-card__social--wight">
+                    <a class="team-card__link" href="#">
+                      <svg class="team-card__icon" width="20" height="20">
+                        <use
+                          class="team-card__vector"
+                          href="./imeges/vector/symbol-defs.svg#icont-vectorinstagram"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team-card__social--wight">
+                    <a class="team-card__link" href="#">
+                      <svg class="team-card" width="20" height="20">
+                        <use
+                          class="team-card__vector"
+                          href="./imeges/vector/symbol-defs.svg#icont-vectortwitter"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team-card__social--wight">
+                    <a class="team-card__link" href="#">
+                      <svg class="team-card" width="20" height="20">
+                        <use
+                          class="team-card__vector"
+                          href="./imeges/vector/symbol-defs.svg#icont-vectorfacebook"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team-card__social--wight">
+                    <a class="team-card__link" href="#">
+                      <svg class="team-card" width="20" height="20">
+                        <use
+                          class="team-card__vector"
+                          href="./imeges/vector/symbol-defs.svg#icont-vectorlinkedin"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section retreat-top retreat-bottom">
+        <div class="container">
+          <h2 class="title-next">Постоянные клиенты</h2>
+          <ul class="border-red element-center customers">
+            <li class="customers__item element-center">
+              <a href="#" class="customers__link element-center">
+                <svg class="customers__vector" width="106" height="60">
+                  <use
+                    class="customers__icon"
+                    href="./imeges/vector/symbol-defs.svg#icont-vectorLogo"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="customers__item element-center">
+              <a href="#" class="customers__link element-center">
+                <svg class="customers__vector" width="106" height="60">
+                  <use
+                    class="customers__icon"
+                    href="./imeges/vector/symbol-defs.svg#icont-vectorLogo0"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="customers__item element-center">
+              <a href="#" class="customers__link element-center">
+                <svg class="customers__vector" width="106" height="60">
+                  <use
+                    class="customers__icon"
+                    href="./imeges/vector/symbol-defs.svg#icont-vectorLogo1"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="customers__item element-center">
+              <a href="#" class="customers__link element-center">
+                <svg class="customers__vector" width="106" height="60">
+                  <use
+                    class="customers__icon"
+                    href="./imeges/vector/symbol-defs.svg#icont-vectorLogo2"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="customers__item element-center">
+              <a href="#" class="customers__link element-center">
+                <svg class="customers__vector" width="106" height="60">
+                  <use
+                    class="customers__icon"
+                    href="./imeges/vector/symbol-defs.svg#icont-vectorLogo3"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="customers__item element-center">
+              <a href="#" class="customers__link element-center">
+                <svg class="customers__vector" width="106" height="60">
+                  <use
+                    class="customers__icon"
+                    href="./imeges/vector/symbol-defs.svg#icont-vectorLogo4"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <ul class="border-red footer__items">
+          <li class="footer__item">
+            <a href="#" class="logo-footer">
+              <span class="logo--blue">Web</span
+              ><span class="logo--wight">Studio</span>
+            </a>
+            <address class="address__item">
+              <ul>
+                <li class="footer__address">
+                  <a href="#" class="footer__address">
+                    г. Киев, пр-т Леси Украинки, 26
+                  </a>
+                </li>
+                <li class="address-retreat">
+                  <a href="mailto:info@devstudio.com" class="address--grey"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="address-retreat">
+                  <a href="tel:+380961111111" class="address--grey"
+                    >+380 96 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </li>
+          <li class="footer__item">
+            <span class="footer__title">присоединяйтесь</span>
+            <ul class="footer__social border-red element-center">
+              <li class="team-card__social--black-grey">
+                <a href="#" class="team-card__link team-card__link--grey">
+                  <svg class="team-card" width="20" height="20">
+                    <use
+                      class="team-card__vector"
+                      href="./imeges/vector/symbol-defs.svg#icont-vectorinstagram"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team-card__social--black-grey">
+                <a href="#" class="team-card__link team-card__link--grey">
+                  <svg class="team-card" width="20" height="20">
+                    <use
+                      class="team-card__vector"
+                      href="./imeges/vector/symbol-defs.svg#icont-vectortwitter"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team-card__social--black-grey">
+                <a href="#" class="team-card__link team-card__link--grey">
+                  <svg class="team-card" width="20" height="20">
+                    <use
+                      class="team-card__vector"
+                      href="./imeges/vector/symbol-defs.svg#icont-vectorfacebook"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team-card__social--black-grey">
+                <a href="#" class="team-card__link team-card__link--grey">
+                  <svg class="team-card" width="20" height="20">
+                    <use
+                      class="team-card__vector"
+                      href="./imeges/vector/symbol-defs.svg#icont-vectorlinkedin"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer__items">
+            <form class="footer__form" action="@">
+              <label class="footer__label">
+                <span class="footer__title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</span>
+                <input
+                  class="footer__input"
+                  type="email"
+                  name="email"
+                  placeholder="E-mail"
+                />
+              </label>
+              <button class="btn btn__footer" type="submit">
+                <span class="btn__text">Подписаться</span>
+                <svg class="btn__icon" width="24" height="24">
+                  <use
+                    href="./imeges/vector/symbol-defs.svg#icont-vectoricon-send"
+                  ></use>
+                </svg>
+              </button>
+            </form>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button
+          class="modal__button--close element-center"
+          type="button"
+          data-modal-close
+        >
+          <svg class="modal__icon-close" width="18" height="18">
+            <use
+              href="./imeges/vector/symbol-defs.svg#icont-vectorclose-black-18dp-2-1"
+            ></use>
+          </svg>
+        </button>
+        <form class="modal__container">
+          <p class="send-menu-title">
+            Оставьте свои данные, мы вам передзвоним
+          </p>
+          <label class="send-menu">
+            <span class="send-menu-text">Имя</span>
+            <input
+              class="send-menu-send"
+              type="text"
+              name="username"
+              placeholder="Ірка"
+            />
+            <svg class="modal__icon" width="16" height="16">
+              <use
+                href="./imeges/vector/symbol-defs.svg#icont-vectorperson-black-18dp-1"
+              ></use>
+            </svg>
+          </label>
+          <label class="send-menu">
+            <span class="send-menu-text">Телефон</span>
+            <input
+              class="send-menu-send"
+              type="text"
+              name="phoun"
+              placeholder="+380777777777"
+            />
+            <svg class="modal__icon" width="18" height="18">
+              <use
+                href="./imeges/vector/symbol-defs.svg#icont-vectorphone-black-18dp-1"
+              ></use>
+            </svg>
+          </label>
+          <label class="send-menu">
+            <span class="send-menu-text">Почта</span>
+            <input
+              class="send-menu-send"
+              type="email"
+              name="email"
+              placeholder="***********@gmail.com"
+            />
+            <svg class="modal__icon" width="18" height="18">
+              <use
+                href="./imeges/vector/symbol-defs.svg#icont-vectoremail-black-18dp-1"
+              ></use>
+            </svg>
+          </label>
+          <label class="send-menu" for="id-comment">
+            <span class="send-menu-text">Комментарий</span>
+            <textarea
+              class="send-menu-send__textarea"
+              id="id-comment"
+              name="comment"
+              placeholder="Введите текст"
+            ></textarea>
+          </label>
+          <label class="send-menu-check">
+            <input
+              class="send-menu-checkbox"
+              type="checkbox"
+              name="consent"
+              value="consent"
+            />
+            <span class="checkbox"></span>
+            Соглашаюсь с рассылкой и принимаю
+            <a class="send-menu-checkbox-link" href="#">Условия договора</a>
+          </label>
+          <button class="modal__btn" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>

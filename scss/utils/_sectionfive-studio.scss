@@ -1,0 +1,32 @@
+.customers {
+    // justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.customers__item {
+    flex-basis: calc((100% - 5 * 30px) / 6);
+}
+
+.customers__link {
+    fill: var(--icon-color);
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--icon-color);
+    border-radius: 4px;
+    margin-right: 30px;
+    cursor: pointer;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+        border: 1px solid var(--btn-logo-fh-color);
+        fill: var(--btn-logo-fh-color);
+    }
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.customers__vector {}
+
+.customers__icon {}
